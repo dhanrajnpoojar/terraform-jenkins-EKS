@@ -43,11 +43,11 @@ module "eks" {
 
   eks_managed_node_groups = {
     nodes = {
-      min_size     = 1
-      max_size     = 3
-      desired_size = 2
+      min_size     = 5
+      max_size     = 10
+      desired_size = 7
 
-      instance_type = ["t2.small"]
+      instance_type = ["t2.2x.large"]
     }
   }
 
